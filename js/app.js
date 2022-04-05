@@ -67,7 +67,7 @@ function cronometro (){
             clearInterval(mostrador); 
             clearInterval(interval);
 
-            //window.location.href = 'https://www.google.com'; 
+            window.location.href = 'vitoria.html'
 
         }else{
 
@@ -76,7 +76,7 @@ function cronometro (){
 
         }
 
-    }, 2000)
+    }, 1000)
 
 
 }
@@ -100,7 +100,7 @@ function criandoElemento() {
             if(vida > 3){
 
 
-
+                window.location.href = 'derrota.html'
 
 
                 
