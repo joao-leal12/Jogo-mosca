@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    <style>
+            
+            
+    body, html{
+
+            height: 100%; 
+            background: url('imagens/bg.jpg') no-repeat center; 
+            background-size: cover;
+            overflow-y: hidden;
+
+            }
+        
+
+        
+        .container{
+
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+
+
+        }
+
+        select{
+
+            padding: 6px 12px; 
+            font-size: 16px;
+            border-radius: 6px;
+
+
+        }
+
+        select:active{
+            border: none; 
+            outline: none; 
+
+
+        }
+        .btn{
+
+            margin-top: 15px; 
+
+
+        }
+        a {
+
+            background-color: #dc3545; 
+            padding: 12px 25px; 
+            border-radius: 4px; 
+            color: white; 
+            font-size: 18px;
+            text-decoration: none; 
+
+
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <img src="imagens/game.png" alt="imagem Inicial">
+
+
+        <select id="dificuldade">
+            <option value= ''>--Selecione a dificuldade--</option>
+            <option value="facil">Facil</option>
+            <option value="medio">Medio</option>
+            <option value="dificil">Dificil</option>
+
+
+        </select>
+
+        <div class="btn">
+
+         <a href="#" onclick="iniciandoJogo()">Iniciar Jogo</a>
+
+        </div>
+
+    </div>
+
+  <script>
+
+function iniciandoJogo() {
+
+    let teste = document.getElementById('dificuldade').value 
+    window.location.href = `index.html?${teste}`; 
+
+}
+    
+  </script>
+
+<script src="js/app.js"></script>
+</body>
+</html>
